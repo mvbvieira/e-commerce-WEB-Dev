@@ -1,40 +1,44 @@
 import React from 'react';
+import styles from '../../../../styles/Footer.module.css';
 import { Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faYoutube, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Logo from '../../Logo';
 import Image from 'next/image';
-import styles from '../../../../styles/Footer.module.css';
 
 const StorefrontFooter: React.FC = () => {
   return (
     <footer className={styles.background}>
       <Col md={{ span: 8, offset: 2 }}>
         <Row>
-          <Col lg={5} md={12} className="mb-4 mb-lg-0">
-            Acompanhe-nos
-          </Col>
-
-          <Col lg={7} md={12} className="mb-4 mb-lg-0">
+          <Col lg={7} md={12}>
             <Row>
-              <Col lg={1} xs={2}>
-                <FontAwesomeIcon icon={faFacebookF} />
-              </Col>
+              <Col lg={5} md={12} className="mb-4 mb-lg-0">
+                Acompanhe-nos
+                            </Col>
 
-              <Col lg={1} xs={2}>
-                <FontAwesomeIcon icon={faInstagram} />
-              </Col>
+              <Col lg={7} md={12} className="mb-4 mb-lg-0">
+                <Row>
+                  <Col lg={1} xs={2}>
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </Col>
 
-              <Col lg={1} xs={2}>
-                <FontAwesomeIcon icon={faYoutube} />
-              </Col>
+                  <Col lg={1} xs={2}>
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </Col>
 
-              <Col lg={1} xs={2}>
-                <FontAwesomeIcon icon={faTwitter} />
-              </Col>
+                  <Col lg={1} xs={2}>
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </Col>
 
-              <Col lg={1} xs={2}>
-                <FontAwesomeIcon icon={faLinkedin} />
+                  <Col lg={1} xs={2}>
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </Col>
+
+                  <Col lg={1} xs={2}>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Col>
@@ -43,19 +47,19 @@ const StorefrontFooter: React.FC = () => {
             <Row>
               <Col>
                 Contato
-              </Col>
+                            </Col>
 
               <Col>
                 Sobre
-              </Col>
+                            </Col>
 
               <Col>
                 Blog
-              </Col>
+                            </Col>
 
               <Col>
                 FAQ
-              </Col>
+                            </Col>
             </Row>
           </Col>
         </Row>
@@ -76,7 +80,6 @@ const StorefrontFooter: React.FC = () => {
           </Col>
         </Row>
       </Col>
-
     </footer>
   )
 }
